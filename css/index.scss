@@ -1,0 +1,61 @@
+$c-c:#ccc;
+
+@mixin userSelect($value){
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+*{
+  @include userSelect(none);
+}
+
+.table{
+  margin-bottom: 0px;
+}
+.camera{
+  color: dodgerblue;
+  cursor: pointer;
+}
+.g-panel{
+  padding:20px 40px;
+}
+.g-select,.g-range{
+  margin-bottom: 20px;
+}
+.sign{
+  display: inline-block;
+  padding: 5px 10px;
+  background: $c-c;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.g-date{
+  width:90%;
+  text-align: center;
+}
+.g-btn{
+  padding:6px 20px;
+}
+.ant-calendar-picker-input.ant-input.ant-input-lg{
+  border:none;
+}
+
+
+.sign>span{
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sign>span:hover{
+  color: #FF433F;
+}
+.g-select>span,.g-range>span{
+  font-weight: 600;
+}
+
+#app{
+  margin-top: 20px;
+}
